@@ -14,7 +14,7 @@ def adervrtise(gameId):
     }
 
     headers = {
-        'authorization': "NjQ3MjgxMDE3NTgwNjgzMjg2.YZc1CQ.5SOMmSJfjotdCAfr9FOLEoHq_-w"
+        'authorization': ""
     }
     r5 = requests.post('https://discord.com/api/v9/channels/898475024242077786/messages', headers=headers, json = jsonn)
     time.sleep(5)
