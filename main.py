@@ -10,7 +10,7 @@ import json
 import discord
 import secrets
 from unblacklister import uniqueId, referentt
-from advertise import adervrtise
+from advertiser import adervrtise
 import os
 import lxml.etree
 import random
