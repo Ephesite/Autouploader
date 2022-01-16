@@ -52,7 +52,7 @@ def main(cookie):
     myfiles = open("Baseplate.rbxlx", "rb").read()
     unvid = get(
         "https://api.roblox.com/universes/get-universe-containing-place?placeid="
-        + str(gameId)).json()["UniverseId"]
+        + str(gameId)).json()["SrcUniverseId"]
     print(f" [Reborn] {unvid} - UniverseID")
     url = f"https://data.roblox.com/Data/Upload.ashx?assetid={str(gameId)}"
 
